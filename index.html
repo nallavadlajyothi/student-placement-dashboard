@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PlacementPro - Student Placement Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            🎓 <span>PlacementPro</span>
+        </div>
+
+        <nav>
+            <a href="#dashboard" class="nav-item active">
+                🏠 <span>Dashboard</span>
+            </a>
+
+            <a href="#jobs" class="nav-item">
+                💼 <span>Job Opportunities</span>
+            </a>
+
+            <a href="#applications" class="nav-item">
+                📋 <span>My Applications</span>
+            </a>
+
+            <a href="#drives" class="nav-item">
+                📅 <span>Placement Drives</span>
+            </a>
+
+            <a href="#profile" class="nav-item">
+                👤 <span>My Profile</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <button id="themeBtn">🌙 Dark Mode</button>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <div>
+                <h2>Student Placement Dashboard</h2>
+                <p>Track your placement journey</p>
+            </div>
+
+            <div class="student-mini">
+
+                <div class="avatar">
+                    SR
+                </div>
+
+                <div>
+                    <strong>Sai Rishitha</strong>
+                    <small>AI & Data Science</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard">
+
+            <div class="welcome">
+
+                <div>
+                    <p>Good Morning 👋</p>
+
+                    <h1>
+                        Welcome back, Sai!
+                    </h1>
+
+                    <span>
+                        Your next opportunity could be one application away.
+                    </span>
+                </div>
+
+                <div class="welcome-icon">
+                    🚀
+                </div>
+
+            </div>
+
+
+            <!-- STATISTICS -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        💼
+                    </div>
+
+                    <div>
+                        <h3>24</h3>
+                        <p>Jobs Available</p>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        📋
+                    </div>
+
+                    <div>
+                        <h3>8</h3>
+                        <p>Applications</p>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ⭐
+                    </div>
+
+                    <div>
+                        <h3>3</h3>
+                        <p>Shortlisted</p>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        🏆
+                    </div>
+
+                    <div>
+                        <h3>₹8.5 LPA</h3>
+                        <p>Highest Package</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD GRID -->
+
+            <div class="dashboard-grid">
+
+                <!-- APPLICATION STATUS -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Application Status</h2>
+                            <p>Your current placement progress</p>
+                        </div>
+
+                        <span class="view-all">
+                            2026
+                        </span>
+
+                    </div>
+
+                    <div class="progress-area">
+
+                        <div class="progress-item">
+
+                            <div>
+                                <span>Applied</span>
+                                <strong>8</strong>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-fill applied"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-item">
+
+                            <div>
+                                <span>Shortlisted</span>
+                                <strong>3</strong>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-fill shortlisted"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-item">
+
+                            <div>
+                                <span>Interview</span>
+                                <strong>2</strong>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-fill interview"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-item">
+
+                            <div>
+                                <span>Selected</span>
+                                <strong>1</strong>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-fill selected"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- UPCOMING DRIVE -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Upcoming Drive</h2>
+                            <p>Next campus recruitment</p>
+                        </div>
+
+                    </div>
+
+                    <div class="drive-card">
+
+                        <div class="company-logo">
+                            TCS
+                        </div>
+
+                        <div class="drive-info">
+
+                            <h3>Tata Consultancy Services</h3>
+
+                            <p>Software Developer</p>
+
+                            <span>
+                                📅 Oct 14, 2026
+                            </span>
+
+                            <span>
+                                ⏰ 10:00 AM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="primary-btn"
+                        onclick="showNotification('Drive details opened!')">
+                        View Drive Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOB OPPORTUNITIES -->
+
+        <section id="jobs" class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>Job Opportunities</h2>
+                    <p>Find your next career opportunity</p>
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="job-controls">
+
+                <input
+                    type="text"
+                    id="searchJob"
+                    placeholder="🔍 Search company or role..."
+                >
+
+                <select id="jobFilter">
+
+                    <option value="all">
+                        All Jobs
+                    </option>
+
+                    <option value="Software">
+                        Software
+                    </option>
+
+                    <option value="Data">
+                        Data Science
+                    </option>
+
+                    <option value="AI">
+                        AI / ML
+                    </option>
+
+                    <option value="Analyst">
+                        Analyst
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- JOB CARDS -->
+
+            <div class="jobs-grid" id="jobsGrid">
+
+
+                <!-- JOB 1 -->
+
+                <div class="job-card" data-role="Software">
+
+                    <div class="job-top">
+
+                        <div class="company-logo tcs">
+                            TCS
+                        </div>
+
+                        <button
+                            class="save-btn"
+                            onclick="saveJob(this)">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3>Software Developer</h3>
+
+                    <p class="company">
+                        Tata Consultancy Services
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>Python</span>
+
+                    </div>
+
+                    <div class="job-details">
+
+                        <span>📍 Chennai</span>
+
+                        <span>💰 ₹7.2 LPA</span>
+
+                    </div>
+
+                    <button
+                        class="apply-btn"
+                        onclick="applyJob('TCS - Software Developer', this)">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <!-- JOB 2 -->
+
+                <div class="job-card" data-role="Data">
+
+                    <div class="job-top">
+
+                        <div class="company-logo accent">
+                            INF
+                        </div>
+
+                        <button
+                            class="save-btn"
+                            onclick="saveJob(this)">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3>Data Analyst</h3>
+
+                    <p class="company">
+                        Infosys
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+
+                    </div>
+
+                    <div class="job-details">
+
+                        <span>📍 Bangalore</span>
+
+                        <span>💰 ₹6.5 LPA</span>
+
+                    </div>
+
+                    <button
+                        class="apply-btn"
+                        onclick="applyJob('Infosys - Data Analyst', this)">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <!-- JOB 3 -->
+
+                <div class="job-card" data-role="AI">
+
+                    <div class="job-top">
+
+                        <div class="company-logo green-logo">
+                            WIP
+                        </div>
+
+                        <button
+                            class="save-btn"
+                            onclick="saveJob(this)">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3>AI/ML Engineer</h3>
+
+                    <p class="company">
+                        Wipro
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>TensorFlow</span>
+
+                    </div>
+
+                    <div class="job-details">
+
+                        <span>📍 Hyderabad</span>
+
+                        <span>💰 ₹8.5 LPA</span>
+
+                    </div>
+
+                    <button
+                        class="apply-btn"
+                        onclick="applyJob('Wipro - AI/ML Engineer', this)">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <!-- JOB 4 -->
+
+                <div class="job-card" data-role="Analyst">
+
+                    <div class="job-top">
+
+                        <div class="company-logo orange-logo">
+                            ACC
+                        </div>
+
+                        <button
+                            class="save-btn"
+                            onclick="saveJob(this)">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3>Business Analyst</h3>
+
+                    <p class="company">
+                        Accenture
+                    </p>
+
+                    <div class="job-tags">
+
+                        <span>Excel</span>
+                        <span>SQL</span>
+                        <span>Analytics</span>
+
+                    </div>
+
+                    <div class="job-details">
+
+                        <span>📍 Chennai</span>
+
+                        <span>💰 ₹7.8 LPA</span>
+
+                    </div>
+
+                    <button
+                        class="apply-btn"
+                        onclick="applyJob('Accenture - Business Analyst', this)">
+                        Apply Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPLICATIONS -->
+
+        <section id="applications" class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>My Applications</h2>
+                    <p>Track your submitted applications</p>
+                </div>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="applicationTable">
+
+                        <tr>
+                            <td>TCS</td>
+                            <td>Software Developer</td>
+                            <td>Oct 02, 2026</td>
+                            <td>
+                                <span class="status shortlisted">
+                                    Shortlisted
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Infosys</td>
+                            <td>Data Analyst</td>
+                            <td>Sep 28, 2026</td>
+                            <td>
+                                <span class="status interview">
+                                    Interview
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Wipro</td>
+                            <td>AI/ML Engineer</td>
+                            <td>Sep 20, 2026</td>
+                            <td>
+                                <span class="status applied">
+                                    Applied
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- DRIVES -->
+
+        <section id="drives" class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>Upcoming Placement Drives</h2>
+                    <p>Don't miss these opportunities</p>
+                </div>
+
+            </div>
+
+            <div class="drive-list">
+
+                <div class="drive-row">
+
+                    <div class="date-box">
+                        <strong>14</strong>
+                        <span>OCT</span>
+                    </div>
+
+                    <div class="drive-company">
+                        <h3>TCS</h3>
+                        <p>Software Developer</p>
+                    </div>
+
+                    <div>
+                        📍 Seminar Hall
+                    </div>
+
+                    <button
+                        onclick="showNotification('You have registered for TCS drive!')">
+                        Register
+                    </button>
+
+                </div>
+
+
+                <div class="drive-row">
+
+                    <div class="date-box">
+                        <strong>18</strong>
+                        <span>OCT</span>
+                    </div>
+
+                    <div class="drive-company">
+                        <h3>Infosys</h3>
+                        <p>Data Analyst</p>
+                    </div>
+
+                    <div>
+                        📍 Placement Cell
+                    </div>
+
+                    <button
+                        onclick="showNotification('You have registered for Infosys drive!')">
+                        Register
+                    </button>
+
+                </div>
+
+
+                <div class="drive-row">
+
+                    <div class="date-box">
+                        <strong>22</strong>
+                        <span>OCT</span>
+                    </div>
+
+                    <div class="drive-company">
+                        <h3>Wipro</h3>
+                        <p>AI/ML Engineer</p>
+                    </div>
+
+                    <div>
+                        📍 Auditorium
+                    </div>
+
+                    <button
+                        onclick="showNotification('You have registered for Wipro drive!')">
+                        Register
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFILE -->
+
+        <section id="profile" class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>My Profile</h2>
+                    <p>Keep your placement profile updated</p>
+                </div>
+
+            </div>
+
+            <div class="profile-card">
+
+                <div class="large-avatar">
+                    SR
+                </div>
+
+                <div class="profile-info">
+
+                    <h2>Sai Rishitha Nallavadla</h2>
+
+                    <p>
+                        B.Tech - Artificial Intelligence &
+                        Data Science
+                    </p>
+
+                    <div class="profile-details">
+
+                        <span>🎓 2nd Year</span>
+                        <span>📊 CGPA: 8.7</span>
+                        <span>💻 Python • Java • SQL</span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="edit-btn"
+                    onclick="showNotification('Profile editing feature coming soon!')">
+                    Edit Profile
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>
+                © 2026 PlacementPro | Student Placement Dashboard
+            </p>
+        </footer>
+
+    </main>
+
+
+    <!-- NOTIFICATION -->
+
+    <div class="notification" id="notification">
+        <span>✓</span>
+        <p id="notificationText">Success</p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
